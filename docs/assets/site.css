@@ -20,3 +20,13 @@ html[data-theme=light] .fake-line{background:#c8d2df}
 html[data-theme=light] figcaption{background:#f8fafc;color:#596a80}
 html[data-theme=light] .browser-background>img{box-shadow:0 12px 28px #20345016}
 @media(prefers-reduced-motion:reduce){.nav-right #theme-toggle{transition:none}}
+
+/* A single clipped frame draws all four corners above both screenshot variants. */
+.browser-background>.popup-preview{position:relative;width:min(390px,77%);flex:none;z-index:1;overflow:hidden;border-radius:14px;background:#172238;box-shadow:0 16px 30px #0006;isolation:isolate}
+.popup-preview::after{content:"";position:absolute;inset:0;border:1px solid #43516a;border-radius:inherit;pointer-events:none;z-index:2}
+.popup-preview>img{display:block;width:calc(100% + 2px);max-width:none;height:auto;margin:-1px;border-radius:0;box-shadow:none}
+.popup-preview>.preview-light{display:none}
+html[data-theme=light] .popup-preview{background:#f3f5f9;box-shadow:0 12px 28px #20345016}
+html[data-theme=light] .popup-preview::after{border-color:#c5ceda}
+html[data-theme=light] .popup-preview>.preview-dark{display:none}
+html[data-theme=light] .popup-preview>.preview-light{display:block}
