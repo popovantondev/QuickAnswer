@@ -1,0 +1,68 @@
+{
+  "manifest_version": 3,
+  "name": "Edge Quick Answer",
+  "short_name": "Quick Answer",
+  "version": "1.7.8",
+  "description": "Quick Answer 1.7.8 · fixes dark-theme model label contrast, RU/DE/EN.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.groq.com/*",
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Quick Answer",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "qa-dom-153": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1",
+        "windows": "Ctrl+Shift+1"
+      },
+      "description": "Прочитать текст видимой страницы"
+    },
+    "qa-shot-153": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2",
+        "windows": "Ctrl+Shift+2"
+      },
+      "description": "Сделать JPEG-скриншот вкладки"
+    },
+    "qa-mode-153": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+3",
+        "windows": "Ctrl+Shift+3"
+      },
+      "description": "АВТО / Kahoot / обычный тест"
+    },
+    "qa-region-153": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+4",
+        "windows": "Ctrl+Shift+4"
+      },
+      "description": "Выделить область для JPEG-скриншота"
+    },
+    "quick-retry": {
+      "description": "Повторить последний вопрос другой моделью"
+    }
+  },
+  "version_name": "1.7.8 Contrast Fix"
+}

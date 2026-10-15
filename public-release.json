@@ -1,0 +1,18 @@
+{
+  "name": "Quick Answer",
+  "edgeVersion": "1.7.8",
+  "desktopVersion": "0.1",
+  "status": "source-preview",
+  "platforms": [
+    "Microsoft Edge MV3",
+    "Windows 10/11 PowerShell 5.1 desktop (untested)"
+  ],
+  "compiledExecutable": false,
+  "license": "not-selected",
+  "repository": "https://github.com/popovantondev/QuickAnswer",
+  "guides": {
+    "ru": "https://popovantondev.github.io/QuickAnswer/Guide-ru.html",
+    "de": "https://popovantondev.github.io/QuickAnswer/Guide-de.html",
+    "en": "https://popovantondev.github.io/QuickAnswer/Guide-en.html"
+  }
+}

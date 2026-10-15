@@ -1,0 +1,24 @@
+name: Publish reviewed source Preview
+on:
+  push:
+    tags: ['v1.7.8-desktop-0.1-preview']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/audit-public.mjs
+      - run: node scripts/check-release.mjs
+      - run: node scripts/check-backup.mjs
+      - run: node scripts/check-choice-map.mjs
+      - run: node scripts/check-execution.mjs
+      - run: python scripts/package-public.py
+      - name: Publish source archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist/* --title "Edge 1.7.8 + Desktop 0.1 — Untested Windows Source Preview" --notes-file docs/release-notes.md --prerelease --verify-tag

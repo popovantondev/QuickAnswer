@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Quick Answer · Экран или окно Windows</title>
+<style>body{font:14px system-ui,Segoe UI,Arial;background:#101b2c;color:#eaf1fc;margin:0;padding:24px;max-width:1150px}h1{margin:0 0 8px}p{color:#b9cae3}button{background:#2e68d5;color:white;border:0;border-radius:8px;padding:11px 15px;cursor:pointer;margin:5px 4px 10px 0}button:disabled{opacity:.5;cursor:not-allowed}.panel{border:1px solid #4b5f7c;padding:12px;border-radius:10px;margin-top:8px}#imageArea{position:relative;width:fit-content;max-width:100%;}canvas{display:block;width:100%;max-width:100%;height:auto}#overlay{position:absolute;top:0;left:0;cursor:crosshair;touch-action:none}#result{white-space:pre-wrap;overflow-wrap:anywhere;font-size:20px;font-weight:700}small{color:#a5b8d1}</style>
+</head><body><h1 data-i18n="captureTitle">🖥️ Скриншот другого окна / всего экрана</h1>
+<p data-i18n="captureSubtitle">Нажми «Выбрать», в системном окне Edge укажи экран или отдельную программу. Затем обведи нужную область мышью либо отправь весь снимок. Разрешение выбранной области не уменьшается.</p>
+<button data-i18n="captureChoose" id="choose">1. Выбрать экран или окно</button><button data-i18n="captureAll" disabled="" id="all">2. Отправить весь снимок</button><button data-i18n="captureCrop" disabled="" id="crop">2. Отправить выделение</button><button data-i18n="captureClear" disabled="" id="clear">Сбросить выделение</button>
+<div class="panel"><small data-i18n="captureWait" id="status">Ничего не захвачено. Edge обязательно спросит разрешение.</small><div id="imageArea"><canvas id="base"></canvas><canvas id="overlay"></canvas></div></div>
+<div class="panel"><small data-i18n="captureAnswer">Ответ модели</small><div id="result">—</div><small id="details"></small></div>
+<script src="i18n.js"></script><script src="capture.js"></script></body></html>

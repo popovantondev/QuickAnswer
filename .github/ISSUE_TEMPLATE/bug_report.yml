@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible Quick Answer issue. Never attach keys or private screenshots.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Before submitting: remove API keys, personal data, quiz content and logs with sensitive information."
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      placeholder: 1.6.0-preview.1
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and OS
+      placeholder: Edge on Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps with synthetic data
+    validations:
+      required: true

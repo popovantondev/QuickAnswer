@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Quick Answer · orange lightning">
+ <defs>
+  <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#284367"/><stop offset=".4" stop-color="#11233b"/><stop offset="1" stop-color="#070e1e"/></linearGradient>
+  <linearGradient id="warm" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#ffe1a0"/><stop offset=".34" stop-color="#ffac36"/><stop offset=".73" stop-color="#ff861c"/><stop offset="1" stop-color="#ea5c0c"/></linearGradient>
+ </defs>
+ <rect x="8" y="8" width="240" height="240" rx="54" fill="url(#plate)" stroke="#51657d" stroke-width="2"/>
+ <path d="M26 63 Q28 25 80 22 H178 Q218 22 231 57" fill="none" stroke="#e2edfa" stroke-opacity=".18" stroke-width="4" stroke-linecap="round"/>
+ <path d="M160 27 64 146 H121 L92 232 198 111 H142 L171 27 Z" fill="url(#warm)" stroke="#ffc16a" stroke-width="2" stroke-linejoin="round"/>
+ <path d="M160 35 74 143 H128" fill="none" stroke="#fff4c9" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+ </svg>

@@ -1,0 +1,1 @@
+(()=>{const key='qa-guide-theme';const html=document.documentElement;try{html.dataset.theme=localStorage.getItem(key)||'dark'}catch{html.dataset.theme='dark'}document.querySelector('#theme-toggle')?.addEventListener('click',()=>{html.dataset.theme=html.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem(key,html.dataset.theme)}catch{}})})();
