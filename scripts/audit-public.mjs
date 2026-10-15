@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const root=path.resolve(import.meta.dirname,'..');
-const allowedExt=new Set(['.js','.mjs','.json','.html','.css','.md','.ps1','.cmd','.yml','.yaml','.svg','.txt']);
+const allowedExt=new Set(['.py','.js','.mjs','.json','.html','.css','.md','.ps1','.cmd','.yml','.yaml','.svg','.txt']);
 const all=[];
 function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const abs=path.join(dir,entry.name);if(entry.isDirectory()){
   if(entry.name==='.git')continue;

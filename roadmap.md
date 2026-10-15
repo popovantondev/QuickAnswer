@@ -5,5 +5,5 @@
 - [x] Desktop source preview using built-in Windows PowerShell + WinForms.
 - [ ] Test desktop on a real Windows 11 laptop, with global hotkeys, scaling, two monitors, Groq and Gemini.
 - [ ] If validated, package and sign a standalone x64 EXE.
-- [ ] Publish repository and release downloads under the owner's GitHub profile.
+- [x] Publish repository and release downloads under the owner's GitHub profile.
 - [ ] Request owner's chosen source-code license.
