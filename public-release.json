@@ -1,18 +1,87 @@
 {
+  "schema_version": 1,
   "name": "Quick Answer",
+  "repo": "QuickAnswer",
+  "version": "1.7.8",
+  "platform": "Microsoft Edge · Windows Desktop source (untested)",
+  "status": "source",
+  "tag": null,
+  "source_url": "https://github.com/popovantondev/QuickAnswer",
+  "release_url": null,
+  "description": {
+    "ru": "Расширение Edge 1.7.8 и экспериментальные исходники Desktop 0.1 для Windows. Desktop не испытан; EXE нет.",
+    "de": "Edge-Erweiterung 1.7.8 und experimenteller Desktop-Quellcode 0.1 für Windows. Desktop ungetestet; keine EXE.",
+    "en": "Edge extension 1.7.8 and experimental Windows Desktop 0.1 source. Desktop is untested; no EXE."
+  },
+  "requirements": {
+    "ru": "Edge: загрузка распакованного расширения и собственные ключи Groq/Gemini. Desktop: Windows 10/11, PowerShell 5.1, WinForms и .NET Framework; запуск не проверен, локализация частичная, вложенный Bridge несовместим. Вопросы и снимки отправляются провайдеру.",
+    "de": "Edge: entpackte Erweiterung und eigene Groq/Gemini-Schlüssel. Desktop: Windows 10/11, PowerShell 5.1, WinForms und .NET Framework; Start ungeprüft, teilweise lokalisiert, enthaltene Bridge inkompatibel. Fragen und Bilder gehen an den Anbieter.",
+    "en": "Edge: load the unpacked extension and provide your own Groq/Gemini keys. Desktop: Windows 10/11, PowerShell 5.1, WinForms and .NET Framework; launch untested, localization partial, bundled Bridge incompatible. Questions and images go to the provider."
+  },
+  "start": {
+    "ru": "Откройте руководство: архивы Edge и Desktop Source Preview доступны отдельно. Edge: загрузите edge-quick-answer через edge://extensions; Desktop: desktop/START_QuickAnswer.cmd только для оценки исходников. Проверьте SHA-256.",
+    "de": "Anleitung öffnen: Edge- und Desktop-Source-Preview-Archive sind getrennt verfügbar. Edge: edge-quick-answer unter edge://extensions laden; Desktop: desktop/START_QuickAnswer.cmd nur zur Quellcode-Evaluierung. SHA-256 prüfen.",
+    "en": "Open the guide for separate Edge and Desktop Source Preview archives. Edge: load edge-quick-answer at edge://extensions; Desktop: desktop/START_QuickAnswer.cmd for source evaluation only. Verify SHA-256."
+  },
+  "readmes": {
+    "en": [
+      "README.md"
+    ],
+    "ru": [
+      "docs/README.ru.md"
+    ],
+    "de": [
+      "docs/README.de.md"
+    ]
+  },
+  "guides": {
+    "ru": "docs/Guide-ru.html",
+    "de": "docs/Guide-de.html",
+    "en": "docs/Guide-en.html"
+  },
+  "help_url": "https://popovantondev.github.io/QuickAnswer/Guide-{lang}.html",
+  "feedback_url": "https://github.com/popovantondev/QuickAnswer/issues/new",
+  "assets": [
+    {
+      "name": "QuickAnswer-1.7.8-Desktop-0.1-PublicSource.zip",
+      "size": 6512417,
+      "sha256": "0c3530ada6638b12931eec80cf4da308a8302972570055af8ddb03988613460e",
+      "url": "https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/QuickAnswer-1.7.8-Desktop-0.1-PublicSource.zip"
+    },
+    {
+      "name": "QuickAnswer-Desktop-0.1-SourcePreview.zip",
+      "size": 11315,
+      "sha256": "1fce5a49556d9213e0a49a9000fc3cd51d5293d8d538f034aff28db15b59c075",
+      "url": "https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/QuickAnswer-Desktop-0.1-SourcePreview.zip"
+    },
+    {
+      "name": "QuickAnswer-Edge-1.7.8.zip",
+      "size": 89632,
+      "sha256": "57fc7cf194fde200fd1265e0fcef656587d8304bb5d98bc0825306c10b3b0917",
+      "url": "https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/QuickAnswer-Edge-1.7.8.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 317,
+      "sha256": "194c553cf94edf9798bf7706a10bf0f71aef09b60c4717f6b65d5786dad0aee7",
+      "url": "https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/SHA256SUMS.txt"
+    }
+  ],
+  "downloads": [],
+  "checksums": [
+    "SHA256SUMS.txt"
+  ],
+  "version_files": [
+    {
+      "path": "edge-quick-answer/manifest.json",
+      "pattern": "\"version\"\\s*:\\s*\"([^\"]+)\""
+    }
+  ],
   "edgeVersion": "1.7.8",
   "desktopVersion": "0.1",
-  "status": "source-preview",
-  "platforms": [
-    "Microsoft Edge MV3",
-    "Windows 10/11 PowerShell 5.1 desktop (untested)"
-  ],
+  "desktopStatus": "untested-source-preview",
   "compiledExecutable": false,
   "license": "not-selected",
-  "repository": "https://github.com/popovantondev/QuickAnswer",
-  "guides": {
-    "ru": "https://popovantondev.github.io/QuickAnswer/Guide-ru.html",
-    "de": "https://popovantondev.github.io/QuickAnswer/Guide-de.html",
-    "en": "https://popovantondev.github.io/QuickAnswer/Guide-en.html"
-  }
+  "source_preview_tag": "v1.7.8-desktop-0.1-preview",
+  "source_preview_url": "https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview"
 }
