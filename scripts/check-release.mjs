@@ -35,7 +35,7 @@ for(const page of ['popup','settings','capture','debug']){
   if(!href.includes(':')&&!href.startsWith('data:'))check(present(path.join(ext,href)),`local asset ${page}: ${href}`);
  }
 }
-const loc=text(path.join(ext,'i18n.js')); const match=loc.match(/const catalogs=(\{[\s\S]*?\});\n let current/);
+const loc=text(path.join(ext,'i18n.js')); const match=loc.match(/const catalogs=(\{[\s\S]*?\});\r?\n let current/);
 check(Boolean(match),'runtime i18n catalog parse');
 const translations=JSON.parse(match[1]);
 const langs=['ru','de','en']; const sourceKeys=Object.keys(translations.ru).sort();

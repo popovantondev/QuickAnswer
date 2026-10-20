@@ -62,8 +62,8 @@
     },
     {
       "name": "SHA256SUMS.txt",
-      "size": 317,
-      "sha256": "194c553cf94edf9798bf7706a10bf0f71aef09b60c4717f6b65d5786dad0aee7",
+      "size": 314,
+      "sha256": "9dfe4243467b405f1cbdbd59279d56e6aedc94617cb467106f30c9ad956f6d62",
       "url": "https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/SHA256SUMS.txt"
     }
   ],
