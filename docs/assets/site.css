@@ -30,3 +30,9 @@ html[data-theme=light] .popup-preview{background:#f3f5f9;box-shadow:0 12px 28px 
 html[data-theme=light] .popup-preview::after{border-color:#c5ceda}
 html[data-theme=light] .popup-preview>.preview-dark{display:none}
 html[data-theme=light] .popup-preview>.preview-light{display:block}
+
+/* Responsive presentation polish. */
+
+.cta-row{gap:12px}.cta-row a{min-height:44px;white-space:normal;overflow-wrap:anywhere}.small-note,figcaption{font-size:14px;line-height:1.6}.nav-links{flex-wrap:wrap}.site-nav>*{min-width:0}.hero-copy{min-width:0}.notice{overflow-wrap:anywhere;scroll-margin-top:24px}.notice .cta{margin-top:12px}
+@media(max-width:800px){.site-nav{flex-wrap:wrap;gap:16px}.nav-right{flex-wrap:wrap}.hero h1{overflow-wrap:anywhere}.nav-links a{min-height:44px;display:inline-flex;align-items:center}}
+
