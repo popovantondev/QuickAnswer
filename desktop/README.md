@@ -10,7 +10,7 @@ Enter your own Groq/Gemini keys in the API-keys panel. Settings are encrypted us
 
 JPEG images are encoded in memory at 80% quality without downscaling and are transmitted to selected provider endpoints. No screenshot output is saved to the app directory. Screenshots of protected or exclusive fullscreen apps may be blank. Accuracy and latency are not guaranteed; API quotas and provider model availability can change.
 
-The school/device operator may prohibit script execution. Don't bypass organizational restrictions without permission. Always comply with quiz rules and privacy obligations.
+The school/device operator may prohibit script execution. Don't bypass organizational restrictions without permission. Quick Answer is a study assistant for self-checking and exam preparation: follow the rules of your school or university, and do not use it in exams or graded tests. Always comply with privacy obligations.
 
 
 The bundled Bridge accepts browser extension origins only, so this desktop client is currently incompatible with it. Use Groq/Gemini for evaluation. RU/DE/EN covers the main controls; the key dialog and some errors remain English.

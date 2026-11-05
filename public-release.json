@@ -25,13 +25,13 @@
   },
   "readmes": {
     "en": [
-      "README.md"
+      "README.en.md"
     ],
     "ru": [
-      "docs/README.ru.md"
+      "README.ru.md"
     ],
     "de": [
-      "docs/README.de.md"
+      "README.md"
     ]
   },
   "guides": {

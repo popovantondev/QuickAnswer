@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quick Answer · Languages</title><meta http-equiv="refresh" content="1;url=index-en.html"></head><body><p>Quick Answer: <a href="index-en.html">English</a> · <a href="index-de.html">Deutsch</a> · <a href="index-ru.html">Русский</a></p><script>const l=navigator.language.toLowerCase();location.replace(l.startsWith('ru')?'index-ru.html':l.startsWith('de')?'index-de.html':'index-en.html');</script></body></html>
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="description" content="Quick Answer ist ein Lernassistent für Selbstkontrolle und Prüfungsvorbereitung in Microsoft Edge."><title>Quick Answer — Lernassistent für Edge</title>
+<link rel="icon" href="assets/app-icon.png">
+<script src="assets/kit/kit-theme.js"></script>
+<link rel="stylesheet" href="assets/kit/kit.css?v=2026.11.05-1">
+<link rel="stylesheet" href="assets/site.css?v=2026.11.05-1">
+<script src="assets/kit/programs.js?v=2026.11.05-1" defer></script>
+<script src="assets/kit/kit.js?v=2026.11.05-1" defer></script>
+</head>
+<body class="ppk-page">
+<a class="ppk-skip" href="#main">Zum Inhalt</a>
+<div class="ppk-nav-wrap" id="ppk-nav-wrap">
+<nav class="ppk-nav" aria-label="Hauptnavigation"><a class="ppk-brand" href="index.html"><img src="assets/app-icon.png" alt="" width="34" height="34"><span>Quick Answer</span></a><span class="ppk-spacer"></span><a class="ppk-back" href="https://popovantondev.github.io/popovantondev/index.html">← Alle Programme</a><button class="ppk-search-btn" type="button" data-ppk-open-search aria-label="Programme durchsuchen"><span>Suchen</span><kbd>Strg K</kbd></button><div class="ppk-langs"><a href="index-ru.html" lang="ru" hreflang="ru">RU</a><a href="index.html" lang="de" hreflang="de" aria-current="page">DE</a><a href="index-en.html" lang="en" hreflang="en">EN</a></div><button class="ppk-icon-btn ppk-theme-btn" type="button" data-ppk-theme aria-label="Farbschema wechseln"></button><a class="ppk-icon-btn ppk-gh-btn" href="https://github.com/popovantondev/QuickAnswer" aria-label="GitHub"></a></nav>
+</div>
+<main class="ppk-shell" id="main">
+<section class="ppk-hero"><div>
+<a class="ppk-pill" href="https://github.com/popovantondev/QuickAnswer/blob/main/CHANGELOG.md"><span class="ppk-new">NEU</span><span>Version 1.7.8 ist da</span> <span class="ppk-more">Was ist neu →</span></a>
+<h1>Quick Answer —<br><em>Lernassistent in Edge</em></h1>
+<p class="qa-rules">Quick Answer ist ein Lernassistent für Selbstkontrolle und Prüfungsvorbereitung. Es gelten die Regeln Ihrer Schule oder Hochschule: Der Einsatz in Prüfungen, Klausuren und benoteten Tests ist untersagt.</p>
+<p class="ppk-lead">Die Edge-Erweiterung liest Text oder Screenshot einer Seite, fragt einen KI-Anbieter mit Ihrem eigenen Schlüssel und zeigt eine kurze Antwort mit Begründung zum Nachprüfen. Sie klickt nichts automatisch.</p>
+<span class="ppk-status">Edge-Erweiterung · 1.7.8</span> <span class="ppk-chip">Microsoft Edge · Windows</span>
+<div class="ppk-actions"><a class="ppk-btn ppk-btn-primary" href="https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/QuickAnswer-Edge-1.7.8.zip">Edge-Erweiterung herunterladen</a><a class="ppk-btn ppk-btn-gh" href="https://github.com/popovantondev/QuickAnswer">Quellcode <span class="ppk-chip"><i class="ppk-dot"></i>JavaScript</span></a><a class="ppk-btn" href="Guide-de.html">Anleitung ↗</a><a class="ppk-btn" href="#desktop-preview">Desktop: Quellcode-Vorschau</a></div>
+<p class="ppk-requirements"><strong>Vor dem Start</strong>Microsoft Edge und eigene Groq- oder Gemini-Schlüssel. Fragen und Bilder gehen an den gewählten Anbieter.</p>
+</div>
+<figure class="ppk-preview"><div class="qa-browser-top"><i></i><i></i><i></i><span>Microsoft Edge · Quick Answer</span></div><div class="ppk-stage"><div class="qa-popup"><img class="qa-dark" src="assets/screenshots/popup-de.png" alt="Popup von Quick Answer in Edge (Demo-Oberfläche ohne Schlüssel)" decoding="async"><img class="qa-light" src="assets/screenshots/popup-de-light.png" alt="Popup von Quick Answer in Edge (Demo-Oberfläche ohne Schlüssel)" decoding="async"></div></div><figcaption>Demo-Oberfläche ohne Schlüssel oder private Seiten. Hell: Rendering von 1.7.8 mit simulierten Edge-APIs; dunkel: frühere Version 1.7.4.</figcaption></figure>
+</section>
+<section class="ppk-bento-section ppk-section ppk-reveal" id="features" aria-labelledby="bento-title">
+<h2 id="bento-title">Was drin steckt</h2><p class="ppk-sub">Installation, Funktionen, Datenschutz, Prüfung.</p>
+<div class="ppk-bento">
+<div class="ppk-tile ppk-wide"><h3>Installation</h3><p>Wie in der Anleitung: ZIP laden, entpacken, in Edge einbinden.</p><div class="ppk-term" role="group" aria-label="Terminal"><div class="ppk-term-bar"><i></i><i></i><i></i></div><div class="ppk-term-out"><div class="ppk-ps">1  ZIP aus den Releases laden und ganz entpacken</div><div class="ppk-ps">2  edge://extensions öffnen, Entwicklermodus einschalten</div><div class="ppk-ps">3  „Entpackte Erweiterung laden“ → Ordner edge-quick-answer</div><div class="ppk-ok">✓ Quick Answer erscheint in Edge</div><div class="ppk-dim">   Strg+Umschalt+1 Text · 2 Screenshot · 4 Bereich</div></div></div></div>
+<div class="ppk-tile"><h3>Ihre Daten und Verbindung</h3><p>Fragen und Bilder gehen an den gewählten KI-Anbieter. Dafür brauchen Sie eigene Schlüssel; die Erweiterung arbeitet weder lokal noch offline und sammelt keine Statistik.</p><div class="ppk-chips"><span>Groq</span><span>Gemini</span><span>ChatGPT-Bridge (optional)</span></div></div>
+<div class="ppk-tile"><h3>Funktionen</h3><div class="ppk-chips"><span>Seitentext lesen</span><span>Screenshot (JPEG)</span><span>Bereich markieren</span><span>Anderes Fenster</span><span>Kurzantwort mit Begründung</span><span>Modell-Kette mit Fallback</span><span>Schlüssel-Export mit Passwort</span><span>Diagnose</span></div></div>
+<div class="ppk-tile ppk-wide"><h3>Geprüft</h3><ul class="ppk-checks"><li>Mehr als 130 automatische Prüfungen in GitHub Actions (Manifest, Oberfläche, Sprachen RU/DE/EN)</li><li>Schlüssel-Export, Antwortzuordnung und simulierter Ablauf werden im CI geprüft</li><li>Veröffentlichte Dateien werden auf Schlüssel und private Pfade durchsucht</li><li>SHA-256-Prüfsummen im Release (SHA256SUMS.txt)</li><li>Version 1.7.8 mit Änderungsprotokoll</li></ul></div>
+</div>
+</section>
+<section class="ppk-section ppk-process ppk-reveal" aria-labelledby="process-title"><h2 id="process-title">So funktioniert es</h2><ol class="ppk-flow"><li>Frage erfassen: Text, Screenshot oder Bereich</li><li>Der Anbieter antwortet kurz, mit Begründung</li><li>Sie prüfen die Antwort selbst</li></ol></section>
+<section class="ppk-section ppk-reveal" id="desktop-preview" aria-labelledby="status-title"><h2 id="status-title">Edge-Erweiterung und Desktop-Vorschau</h2><p class="ppk-sub">Zwei getrennte Stände mit unterschiedlichem Prüfstand.</p>
+<div class="qa-status"><article class="qa-card"><h3>Edge-Erweiterung 1.7.8</h3><p>Als entpackte Erweiterung ladbar und beim Projektautor im Einsatz. Tests mit allen Anbietern und Schulseiten wurden nicht durchgeführt.</p><div class="ppk-actions"><a class="ppk-btn ppk-btn-primary" href="https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/QuickAnswer-Edge-1.7.8.zip">Edge-Erweiterung herunterladen</a></div></article>
+<article class="qa-card qa-card-warn"><h3>Desktop 0.1 — ungetestete Quellcode-Vorschau</h3><p>Desktop-Archiv entpacken und START_QuickAnswer.cmd starten. Benötigt Windows 10/11, Windows PowerShell 5.1, WinForms und .NET Framework. Keine kompilierte EXE. Strg+Alt+1: Bildschirm; 2: aktives Fenster; 4: Bereich. Schlüssel: DPAPI CurrentUser. Bilder werden an den gewählten Anbieter gesendet. Laufzeit, Anbieter, DPI und Tastenkürzel sind ungeprüft. Die mitgelieferte Bridge akzeptiert nur Browser-Erweiterungen; Desktop ist derzeit inkompatibel.</p><p><strong>Desktop 0.1: nur Quellcode, keine EXE; Windows-Start nicht geprüft.</strong></p><div class="ppk-actions"><a class="ppk-btn" href="https://github.com/popovantondev/QuickAnswer/releases/download/v1.7.8-desktop-0.1-preview/QuickAnswer-Desktop-0.1-SourcePreview.zip">Desktop-Quellcode herunterladen</a></div></article></div></section>
+<section class="ppk-section ppk-reveal"><div class="qa-start"><div><h2>Erste Schritte</h2><p>Die Anleitung führt in fünf Schritten von der Installation bis zu Schlüsseln und Diagnose.</p></div><div class="ppk-actions"><a class="ppk-btn ppk-btn-primary" href="Guide-de.html">Anleitung →</a></div></div></section>
+</main>
+<footer class="ppk-footer">
+<span>© 2026 Anton Popov · Quick Answer 1.7.8</span>
+<nav aria-label="Rechtliches"><a href="https://popovantondev.github.io/popovantondev/impressum.html">Impressum</a><a href="https://popovantondev.github.io/popovantondev/datenschutz.html">Datenschutz</a><a href="https://github.com/popovantondev/QuickAnswer">GitHub</a><a href="https://github.com/popovantondev/QuickAnswer/blob/main/docs/RIGHTS.de.md">Rechte</a></nav>
+</footer>
+</body>
+</html>

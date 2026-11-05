@@ -44,12 +44,11 @@ for(const lang of langs){
  check(sourceKeys.every(k=>typeof translations[lang][k]==='string'&&translations[lang][k].trim().length>0),`${lang} nonempty translations`);
  for(const p of [`docs/index-${lang}.html`,`docs/Guide-${lang}.html`,`docs/assets/screenshots/popup-${lang}.png`])check(present(path.join(root,p)),`${lang}: ${p}`);
 }
-for(const file of ['docs/index.html','docs/assets/site.css','docs/assets/app-icon.png','DESIGN_FREEZE.md','AGENTS.md','CHANGELOG.md','README.md','roadmap.md','current_task.md','docs/RELEASE.md','docs/VERIFICATION.md','docs/RIGHTS.md','docs/design/approved-popup-concept.png','docs/design/approved-settings-concept.png','docs/design/approved-site-concept.png'])check(present(path.join(root,file)),`project asset ${file}`);
-check(text(path.join(root,'DESIGN_FREEZE.md')).includes('Orange Pulse'),'design freeze documented');
+for(const file of ['docs/index.html','docs/assets/site.css','docs/assets/app-icon.png','docs/assets/kit/kit.css','docs/assets/kit/kit.js','CHANGELOG.md','README.md','README.en.md','README.ru.md','docs/RELEASE.md','docs/VERIFICATION.md','docs/RIGHTS.md','docs/RIGHTS.de.md','docs/RIGHTS.ru.md'])check(present(path.join(root,file)),`project asset ${file}`);
 check(text(path.join(ext,'popup.css')).includes('--accent: #ff8a1f'),'popup orange design token');
 check(text(path.join(ext,'settings.css')).includes('--orange:#ff8a1f'),'settings orange design token');
 check(text(path.join(root,'docs/assets/site.css')).includes('--accent:#ff8a1f'),'site orange design token');
-for(const file of [...fs.readdirSync(ext).filter(x=>x.endsWith('.js')).map(x=>path.join(ext,x)),path.join(ext,'companion/luna-bridge.js'),path.join(root,'docs/assets/site.js')]){
+for(const file of [...fs.readdirSync(ext).filter(x=>x.endsWith('.js')).map(x=>path.join(ext,x)),path.join(ext,'companion/luna-bridge.js')]){
  const run=spawnSync('node',['--check',file],{encoding:'utf8'});
  check(run.status===0,`JS syntax ${path.relative(root,file)}`);
 }
