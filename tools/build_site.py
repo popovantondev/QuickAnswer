@@ -127,7 +127,7 @@ TXT = {
         desk_strong='Desktop 0.1: source only, no EXE; Windows launch not verified.', desk_dl='Download desktop source',
         flow_title='How it works', flow=['Capture the question: text, screenshot or region', 'The provider answers briefly, with a reason', 'You check the answer yourself'],
         start_title='First steps', start_text='The guide takes you in five steps from installation to keys and diagnostics.',
-        g_title='Quick Answer — Guide', g_h1='User guide', g_toc='Documentation', g_home='← Program page', g_dl='Download Edge / Desktop Source Preview',
+        g_title='Quick Answer — User guide', g_h1='User guide', g_toc='Documentation', g_home='← Program page', g_dl='Download Edge / Desktop Source Preview',
         g_start='Get started →',
         steps=[('Installation', 'Download the ZIP from Releases and extract the whole folder. Open edge://extensions, enable Developer mode, choose Load unpacked, and select the edge-quick-answer folder. Do not remove the extension when updating, reload it instead: a new extension ID can lose access to saved keys.'),
                ('Quick launch', 'Ctrl+Shift+1 reads page text, Ctrl+Shift+2 captures JPEG, Ctrl+Shift+4 selects a region, and Ctrl+Shift+3 cycles the question mode. For another window use Edge’s permission-based screen picker.'),
@@ -144,7 +144,7 @@ TXT = {
         lead='Расширение Edge читает текст или снимок страницы, спрашивает ИИ-провайдера по вашему собственному ключу и показывает короткий ответ с обоснованием, которое можно проверить. Ничего не нажимается автоматически.',
         status='Расширение Edge', platform='Microsoft Edge · Windows',
         download='Скачать расширение Edge', source='Исходный код', guide='Руководство', desktop='Desktop: исходники для ознакомления',
-        req_title='Перед началом', req='Microsoft Edge и собственные ключи Groq или Gemini. Вопросы и снимки отправляются выбранному провайдеру.',
+        req_title='Перед запуском', req='Microsoft Edge и собственные ключи Groq или Gemini. Вопросы и снимки отправляются выбранному провайдеру.',
         shot_alt='Окно Quick Answer в Edge (демонстрационный интерфейс без ключей)',
         caption='Демонстрационный интерфейс без ключей и личных страниц. Светлый вид: рендер 1.7.8 с имитацией API Edge; тёмный: снимок прежней версии 1.7.4.',
         browser='Microsoft Edge · Quick Answer',
@@ -222,8 +222,9 @@ def footer(lang, version):
     u = UI[lang]
     return ('<footer class="ppk-footer">\n<span>© 2026 Anton Popov · Quick Answer %s</span>\n'
             '<nav aria-label="%s"><a href="%simpressum.html">Impressum</a><a href="%sdatenschutz.html">Datenschutz</a>'
-            '<a href="%s">GitHub</a><a href="%s/blob/main/docs/RIGHTS%s.md">%s</a></nav>\n</footer>') % (
-        version, u['legal'], PROFILE, PROFILE, GITHUB, GITHUB, {'de': '.de', 'ru': '.ru', 'en': ''}[lang], u['rights'])
+            '<a href="%s/blob/main/docs/RIGHTS%s.md">%s</a><a href="%s/issues/new">%s</a><a href="%s">GitHub</a></nav>\n</footer>') % (
+        version, u['legal'], PROFILE, PROFILE, GITHUB, {'de': '.de', 'ru': '.ru', 'en': ''}[lang], u['rights'],
+        GITHUB, {'de': 'Problem melden', 'ru': 'Сообщить об ошибке', 'en': 'Report a problem'}[lang], GITHUB)
 
 
 def landing(lang, d, version):
