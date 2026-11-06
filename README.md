@@ -1,16 +1,22 @@
+<div align="center">
+  <img src="docs/assets/app-icon.png" width="128" alt="Quick Answer Symbol">
+</div>
+
 # Quick Answer
 
-**Deutsch** · [English](README.en.md) · [Русский](README.ru.md)
+[Русский](README.ru.md) · **Deutsch** · [English](README.en.md)
 
 **Quick Answer ist ein Lernassistent für Selbstkontrolle und Prüfungsvorbereitung. Es gelten die Regeln Ihrer Schule oder Hochschule: Der Einsatz in Prüfungen, Klausuren und benoteten Tests ist untersagt.**
 
-[Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview) · [Website](https://popovantondev.github.io/QuickAnswer/index.html) · [Anleitung DE](https://popovantondev.github.io/QuickAnswer/Guide-de.html) · [EN](https://popovantondev.github.io/QuickAnswer/Guide-en.html) · [RU](https://popovantondev.github.io/QuickAnswer/Guide-ru.html)
+**Edge 1.7.8 (beim Projektautor im Einsatz) · Desktop 0.1 Source Preview (unter Windows noch nicht getestet)**
 
-![Quick Answer](docs/assets/banner.svg)
+**[Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview)** · **[Webseite](https://popovantondev.github.io/QuickAnswer/)** · **[Anleitung](https://popovantondev.github.io/QuickAnswer/Guide-de.html)** · **[Fehler melden](https://github.com/popovantondev/QuickAnswer/issues/new)**
+
+![Demo-Oberfläche der Edge-Erweiterung](docs/assets/screenshots/popup-de.png)
+
+*Der Screenshot zeigt Demodaten einer früheren 1.7.x-Oberfläche; Schlüssel und private Seiten sind nicht zu sehen.*
 
 Die Edge-Erweiterung liest Text oder Screenshot einer Seite, fragt einen KI-Anbieter mit Ihrem eigenen Schlüssel (Groq → Gemini → optional eine lokale ChatGPT-Bridge) und zeigt eine kurze Antwort mit Begründung zum Nachprüfen. Zusätzlich gibt es eine Desktop-Vorschau für Windows. Die Anwendung klickt keine Antworten automatisch an.
-
-**Edge 1.7.8 (beim Projektautor im Einsatz) · Desktop 0.1 Source Preview (unter Windows noch nicht getestet)**
 
 | Edge-Erweiterung | Windows-Desktop-Vorschau |
 |---|---|
@@ -18,10 +24,6 @@ Die Edge-Erweiterung liest Text oder Screenshot einer Seite, fragt einen KI-Anbi
 | Ctrl+Shift+1 / 2 / 3 / 4 | Ctrl+Alt+1 (Bildschirm), 2 (Fenster), 4 (Bereich) |
 | Speicherung im Edge-Profil, Export mit Passwort | Mit DPAPI verschlüsselte Schlüssel in `%LOCALAPPDATA%\QuickAnswerDesktop` |
 | RU / DE / EN, hell/dunkel | RU / DE / EN, kompakte dunkle Oberfläche |
-
-![Demo-Oberfläche der Edge-Erweiterung](docs/assets/screenshots/popup-de.png)
-
-*Der Screenshot zeigt Demodaten einer früheren 1.7.x-Oberfläche; Schlüssel und private Seiten sind nicht zu sehen.*
 
 ## Erste Schritte
 

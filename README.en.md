@@ -1,16 +1,22 @@
+<div align="center">
+  <img src="docs/assets/app-icon.png" width="128" alt="Quick Answer icon">
+</div>
+
 # Quick Answer
 
-[Deutsch](README.md) · **English** · [Русский](README.ru.md)
+[Русский](README.ru.md) · [Deutsch](README.md) · **English**
 
 **Quick Answer is a study assistant for self-checking and exam preparation. The rules of your school or university apply: using it in exams, written tests or graded assessments is prohibited.**
 
-[Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview) · [Website](https://popovantondev.github.io/QuickAnswer/index-en.html) · [Guide EN](https://popovantondev.github.io/QuickAnswer/Guide-en.html) · [DE](https://popovantondev.github.io/QuickAnswer/Guide-de.html) · [RU](https://popovantondev.github.io/QuickAnswer/Guide-ru.html)
+**Edge 1.7.8 (in use by the project author) · Desktop 0.1 source preview (Windows runtime not yet verified)**
 
-![Quick Answer](docs/assets/banner.svg)
+**[Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview)** · **[Website](https://popovantondev.github.io/QuickAnswer/index-en.html)** · **[User guide](https://popovantondev.github.io/QuickAnswer/Guide-en.html)** · **[Report a problem](https://github.com/popovantondev/QuickAnswer/issues/new)**
+
+![Edge popup demonstration](docs/assets/screenshots/popup-en.png)
+
+*Edge screenshot shows demonstration data from an earlier 1.7.x skin; API keys and private pages are not shown.*
 
 The Edge extension reads the text or a screenshot of a page, asks an AI provider with your own key (Groq → Gemini → optional local ChatGPT Bridge) and shows a short answer with a reason you can check. A Windows desktop preview is included as well. The application does not click answers automatically.
-
-**Edge 1.7.8 (in use by the project author) · Desktop 0.1 source preview (Windows runtime not yet verified)**
 
 | Edge extension | Windows desktop preview |
 |---|---|
@@ -18,10 +24,6 @@ The Edge extension reads the text or a screenshot of a page, asks an AI provider
 | Ctrl+Shift+1 / 2 / 3 / 4 | Ctrl+Alt+1 (screen), 2 (window), 4 (region) |
 | Per-profile Edge storage and password-encrypted export | DPAPI-encrypted API keys in `%LOCALAPPDATA%\QuickAnswerDesktop` |
 | RU / DE / EN, light/dark | RU / DE / EN, compact dark UI |
-
-![Edge popup demonstration](docs/assets/screenshots/popup-en.png)
-
-*Edge screenshot shows demonstration data from an earlier 1.7.x skin; API keys and private pages are not shown.*
 
 ## First steps
 
