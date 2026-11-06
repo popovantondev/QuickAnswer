@@ -1,8 +1,8 @@
 # Quick Answer
 
-**Quick Answer is a study assistant for self-checking and exam preparation. The rules of your school or university apply: using it in exams, written tests or graded assessments is prohibited.**
-
 [Deutsch](README.md) · **English** · [Русский](README.ru.md)
+
+**Quick Answer is a study assistant for self-checking and exam preparation. The rules of your school or university apply: using it in exams, written tests or graded assessments is prohibited.**
 
 [Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview) · [Website](https://popovantondev.github.io/QuickAnswer/index-en.html) · [Guide EN](https://popovantondev.github.io/QuickAnswer/Guide-en.html) · [DE](https://popovantondev.github.io/QuickAnswer/Guide-de.html) · [RU](https://popovantondev.github.io/QuickAnswer/Guide-ru.html)
 

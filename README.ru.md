@@ -1,8 +1,8 @@
 # Quick Answer
 
-**Quick Answer — учебный помощник для самопроверки и подготовки. Соблюдайте правила своего учебного заведения: использовать его на экзаменах, контрольных работах и оценочных тестах запрещено.**
-
 [Deutsch](README.md) · [English](README.en.md) · **Русский**
+
+**Quick Answer — учебный помощник для самопроверки и подготовки. Соблюдайте правила своего учебного заведения: использовать его на экзаменах, контрольных работах и оценочных тестах запрещено.**
 
 [Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview) · [Сайт](https://popovantondev.github.io/QuickAnswer/index-ru.html) · [Руководство RU](https://popovantondev.github.io/QuickAnswer/Guide-ru.html) · [DE](https://popovantondev.github.io/QuickAnswer/Guide-de.html) · [EN](https://popovantondev.github.io/QuickAnswer/Guide-en.html)
 

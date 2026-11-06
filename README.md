@@ -1,8 +1,8 @@
 # Quick Answer
 
-**Quick Answer ist ein Lernassistent für Selbstkontrolle und Prüfungsvorbereitung. Es gelten die Regeln Ihrer Schule oder Hochschule: Der Einsatz in Prüfungen, Klausuren und benoteten Tests ist untersagt.**
-
 **Deutsch** · [English](README.en.md) · [Русский](README.ru.md)
+
+**Quick Answer ist ein Lernassistent für Selbstkontrolle und Prüfungsvorbereitung. Es gelten die Regeln Ihrer Schule oder Hochschule: Der Einsatz in Prüfungen, Klausuren und benoteten Tests ist untersagt.**
 
 [Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview) · [Website](https://popovantondev.github.io/QuickAnswer/index.html) · [Anleitung DE](https://popovantondev.github.io/QuickAnswer/Guide-de.html) · [EN](https://popovantondev.github.io/QuickAnswer/Guide-en.html) · [RU](https://popovantondev.github.io/QuickAnswer/Guide-ru.html)
 
