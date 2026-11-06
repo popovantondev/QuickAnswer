@@ -11,6 +11,8 @@ from html import escape as e
 import json
 import sys
 
+import site_images
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / 'docs'
 LANGS = ('ru', 'de', 'en')
@@ -332,6 +334,8 @@ def main():
     check = '--check' in sys.argv
     bad = []
     for name, text in outputs().items():
+        if name.endswith('.html'):
+            text = site_images.optimize_page(text, DOCS, 'QuickAnswer', ROOT, name)
         path = DOCS / name
         data = text.encode('utf-8')
         if check:
