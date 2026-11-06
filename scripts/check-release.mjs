@@ -43,6 +43,8 @@ for(const lang of langs){
  check(JSON.stringify(Object.keys(translations[lang]||{}).sort())===JSON.stringify(sourceKeys),`${lang} language-key parity`);
  check(sourceKeys.every(k=>typeof translations[lang][k]==='string'&&translations[lang][k].trim().length>0),`${lang} nonempty translations`);
  for(const p of [`docs/index-${lang}.html`,`docs/Guide-${lang}.html`,`docs/assets/screenshots/popup-${lang}.png`])check(present(path.join(root,p)),`${lang}: ${p}`);
+ const homeLabel={ru:'← На страницу программы',de:'← Zur Programmseite',en:'← Program page'}[lang],landing=lang==='de'?'index.html':`index-${lang}.html`;
+ check(new RegExp(`<a\\b[^>]*href="${landing}"[^>]*>\\s*${homeLabel}\\s*</a>`).test(text(path.join(root,`docs/Guide-${lang}.html`))),`${lang}: guide button to the program page`);
 }
 for(const file of ['docs/index.html','docs/assets/site.css','docs/assets/app-icon.png','docs/assets/kit/kit.css','docs/assets/kit/kit.js','CHANGELOG.md','README.md','README.en.md','README.ru.md','docs/RELEASE.md','docs/VERIFICATION.md','docs/RIGHTS.md','docs/RIGHTS.de.md','docs/RIGHTS.ru.md'])check(present(path.join(root,file)),`project asset ${file}`);
 check(text(path.join(ext,'popup.css')).includes('--accent: #ff8a1f'),'popup orange design token');

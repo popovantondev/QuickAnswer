@@ -79,7 +79,7 @@ TXT = {
         flow_title='So funktioniert es', flow=['Frage erfassen: Text, Screenshot oder Bereich', 'Der Anbieter antwortet kurz, mit Begründung', 'Sie prüfen die Antwort selbst'],
         start_title='Erste Schritte', start_text='Die Anleitung führt in fünf Schritten von der Installation bis zu Schlüsseln und Diagnose.',
         # guide
-        g_title='Quick Answer — Anleitung', g_h1='Anleitung', g_toc='Dokumentation', g_home='Start', g_dl='Edge / Desktop Source Preview herunterladen',
+        g_title='Quick Answer — Anleitung', g_h1='Anleitung', g_toc='Dokumentation', g_home='← Zur Programmseite', g_dl='Edge / Desktop Source Preview herunterladen',
         g_start='Loslegen →',
         steps=[('Installation', 'Laden Sie das ZIP aus den Releases herunter und entpacken Sie den vollständigen Ordner. Öffnen Sie edge://extensions, aktivieren Sie den Entwicklermodus und wählen Sie „Entpackte Erweiterung laden“. Wählen Sie den Ordner edge-quick-answer. Entfernen Sie die Erweiterung bei Updates nicht, sondern laden Sie sie neu: Eine neue Erweiterungs-ID kann den Zugriff auf gespeicherte Schlüssel kosten.'),
                ('Schnellstart', 'Ctrl+Shift+1 liest den Text, Ctrl+Shift+2 erstellt ein JPEG, Ctrl+Shift+4 wählt einen Bereich. Ctrl+Shift+3 wechselt das Frageformat. Für andere Fenster gibt es die Freigabe über Edge.'),
@@ -125,7 +125,7 @@ TXT = {
         desk_strong='Desktop 0.1: source only, no EXE; Windows launch not verified.', desk_dl='Download desktop source',
         flow_title='How it works', flow=['Capture the question: text, screenshot or region', 'The provider answers briefly, with a reason', 'You check the answer yourself'],
         start_title='First steps', start_text='The guide takes you in five steps from installation to keys and diagnostics.',
-        g_title='Quick Answer — Guide', g_h1='User guide', g_toc='Documentation', g_home='Home', g_dl='Download Edge / Desktop Source Preview',
+        g_title='Quick Answer — Guide', g_h1='User guide', g_toc='Documentation', g_home='← Program page', g_dl='Download Edge / Desktop Source Preview',
         g_start='Get started →',
         steps=[('Installation', 'Download the ZIP from Releases and extract the whole folder. Open edge://extensions, enable Developer mode, choose Load unpacked, and select the edge-quick-answer folder. Do not remove the extension when updating, reload it instead: a new extension ID can lose access to saved keys.'),
                ('Quick launch', 'Ctrl+Shift+1 reads page text, Ctrl+Shift+2 captures JPEG, Ctrl+Shift+4 selects a region, and Ctrl+Shift+3 cycles the question mode. For another window use Edge’s permission-based screen picker.'),
@@ -171,7 +171,7 @@ TXT = {
         desk_strong='Desktop 0.1: только исходники, без EXE; запуск в Windows не проверен.', desk_dl='Скачать исходники Desktop',
         flow_title='Как это работает', flow=['Захватить вопрос: текст, снимок или область', 'Провайдер коротко отвечает и объясняет', 'Вы сами проверяете ответ'],
         start_title='Первые шаги', start_text='Руководство за пять шагов проведёт от установки до ключей и диагностики.',
-        g_title='Quick Answer — Руководство', g_h1='Руководство', g_toc='Документация', g_home='Главная', g_dl='Скачать Edge / Desktop Source Preview',
+        g_title='Quick Answer — Руководство', g_h1='Руководство', g_toc='Документация', g_home='← На страницу программы', g_dl='Скачать Edge / Desktop Source Preview',
         g_start='Начать работу →',
         steps=[('Установка', 'Скачайте ZIP из Releases, распакуйте всю папку. Откройте edge://extensions, включите режим разработчика и нажмите «Загрузить распакованное». Выберите папку edge-quick-answer. При обновлении не удаляйте расширение, а перезагрузите его: новый ID расширения может лишить доступа к сохранённым ключам.'),
                ('Быстрый запуск', 'Нажимайте Ctrl+Shift+1 для текста страницы, Ctrl+Shift+2 для JPEG, Ctrl+Shift+4 для выделения. Ctrl+Shift+3 переключает формат. В другом окне используйте отдельную кнопку захвата с разрешением Edge.'),
@@ -291,10 +291,11 @@ def guide(lang, d, version):
 <a class="ppk-skip" href="#main">%(skip)s</a>
 %(header)s
 <main class="ppk-shell qa-guide" id="main">
+<p class="qa-guide-home"><a class="ppk-btn" href="%(home)s">%(home_label)s</a></p>
 <header class="qa-guide-head"><p class="qa-kicker">Windows 11 · Microsoft Edge · %(v)s</p>
 <h1>%(h1a)s<br><em>%(h1b)s</em></h1>
 <p class="qa-rules">%(rules)s</p>
-<div class="ppk-actions"><a class="ppk-btn ppk-btn-primary" href="#step-1">%(start)s</a><a class="ppk-btn" href="%(zip_page)s">%(dl)s</a><a class="ppk-btn" href="%(home)s">%(home_label)s</a></div></header>
+<div class="ppk-actions"><a class="ppk-btn ppk-btn-primary" href="#step-1">%(start)s</a><a class="ppk-btn" href="%(zip_page)s">%(dl)s</a></div></header>
 <div class="qa-guide-layout"><aside class="qa-toc" aria-label="%(toc_title)s"><h2>%(toc_title)s</h2>%(toc)s</aside>
 <div class="qa-steps">%(steps)s<p class="qa-note">%(notice)s</p></div></div>
 <section class="ppk-section" id="desktop"><div class="qa-card qa-card-warn"><h2>%(desk_title)s</h2><p>%(desk_text)s</p><p><strong>%(desk_strong)s</strong></p></div></section>
@@ -305,8 +306,10 @@ def guide(lang, d, version):
         start=e(t['g_start']), zip_page=RELEASE_PAGE, dl=e(t['g_dl']), home=LANDING[lang], home_label=e(t['g_home']),
         toc_title=e(t['g_toc']), toc=toc, steps=steps, notice=e(t['g_notice']), desk_title=e(t['desk_title']),
         desk_text=e(t['desk_text']), desk_strong=e(t['desk_strong']), footer=footer(lang, d['version']))
-    return '<!doctype html>\n<html lang="%s"><head>%s\n</head>\n%s\n</html>\n' % (
+    page = '<!doctype html>\n<html lang="%s"><head>%s\n</head>\n%s\n</html>\n' % (
         lang, head(lang, t['g_title'], t['desc'], version), body)
+    # The shared site.css gained the home-link rule: new revision for the guides only.
+    return page.replace('assets/site.css?v=%s' % version, 'assets/site.css?v=%s-g1' % version)
 
 
 def redirect():

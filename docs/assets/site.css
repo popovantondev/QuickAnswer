@@ -51,6 +51,8 @@
 
 /* Guide */
 .qa-guide{padding-bottom:10px}
+.qa-guide-home{margin:24px 0 0}
+.qa-guide-home+.qa-guide-head{margin-top:20px}
 .qa-guide-head{margin:34px 0 22px;max-width:820px}
 .qa-kicker{margin:0 0 6px;color:var(--ppk-accent);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
 .qa-guide-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:18px;align-items:start}
