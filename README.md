@@ -1,18 +1,28 @@
-<div align="center">
-  <img src="docs/assets/app-icon.png" width="128" alt="Quick Answer Symbol">
-</div>
+<!-- ppk-readme:head:start -->
+<a href="https://popovantondev.github.io/QuickAnswer/index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/header-de-dark.3f455afa.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/header-de-light.2acaceba.svg" width="880" height="188" alt="Quick Answer — Edge-Erweiterung und experimenteller Desktop-Quellcode. Microsoft Edge · Windows, Nur Quellcode 1.7.8"></picture></a>
+<!-- ppk-readme:head:end -->
 
 # Quick Answer
 
 [Русский](README.ru.md) · **Deutsch** · [English](README.en.md)
 
+<!-- ppk-readme:body:start -->
+<p>
+<a href="https://github.com/popovantondev/QuickAnswer"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-source-de-dark.be444559.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-source-de-light.86f4cd45.svg" width="134" height="36" alt="Quellcode"></picture></a>
+<a href="https://popovantondev.github.io/QuickAnswer/index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-website-de-dark.ddcf64ba.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-website-de-light.64ff632c.svg" width="129" height="36" alt="Webseite"></picture></a>
+<a href="https://popovantondev.github.io/QuickAnswer/Guide-de.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-guide-de-dark.0ab02f09.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-guide-de-light.a8ac155c.svg" width="134" height="36" alt="Anleitung"></picture></a>
+<a href="https://github.com/popovantondev/QuickAnswer/issues/new"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-bug-de-dark.022c2586.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-bug-de-light.562bafed.svg" width="168" height="36" alt="Fehler melden"></picture></a>
+</p>
+
+<p><a href="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/assets/screenshots/popup-de.png"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/preview-de-dark.202f8e37.webp"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/preview-de-light.a7b68f29.webp" width="880" height="516" alt="Oberfläche von Quick Answer"></picture></a><br>
+<sub><a href="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/assets/screenshots/popup-de.png">Ganzer Screenshot</a></sub></p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/divider-dark.187dbbf7.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/divider-light.1cc7ffb8.svg" width="880" height="6" alt="Trennlinie"></picture>
+<!-- ppk-readme:body:end -->
+
 **Quick Answer ist ein Lernassistent für Selbstkontrolle und Prüfungsvorbereitung. Es gelten die Regeln Ihrer Schule oder Hochschule: Der Einsatz in Prüfungen, Klausuren und benoteten Tests ist untersagt.**
 
 **Edge 1.7.8 (beim Projektautor im Einsatz) · Desktop 0.1 Source Preview (unter Windows noch nicht getestet)**
-
-**[Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview)** · **[Webseite](https://popovantondev.github.io/QuickAnswer/)** · **[Anleitung](https://popovantondev.github.io/QuickAnswer/Guide-de.html)** · **[Fehler melden](https://github.com/popovantondev/QuickAnswer/issues/new)**
-
-![Demo-Oberfläche der Edge-Erweiterung](docs/assets/screenshots/popup-de.png)
 
 *Der Screenshot zeigt Demodaten einer früheren 1.7.x-Oberfläche; Schlüssel und private Seiten sind nicht zu sehen.*
 

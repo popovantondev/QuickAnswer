@@ -1,18 +1,28 @@
-<div align="center">
-  <img src="docs/assets/app-icon.png" width="128" alt="Значок Quick Answer">
-</div>
+<!-- ppk-readme:head:start -->
+<a href="https://popovantondev.github.io/QuickAnswer/index-ru.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/header-ru-dark.311a78e3.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/header-ru-light.104d495e.svg" width="880" height="188" alt="Quick Answer — Расширение Edge и экспериментальные исходники Desktop. Microsoft Edge · Windows, Только исходники 1.7.8"></picture></a>
+<!-- ppk-readme:head:end -->
 
 # Quick Answer
 
 **Русский** · [Deutsch](README.md) · [English](README.en.md)
 
+<!-- ppk-readme:body:start -->
+<p>
+<a href="https://github.com/popovantondev/QuickAnswer"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-source-ru-dark.8ad5ba91.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-source-ru-light.c5d2d2da.svg" width="146" height="36" alt="Исходники"></picture></a>
+<a href="https://popovantondev.github.io/QuickAnswer/index-ru.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-website-ru-dark.05d60367.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-website-ru-light.6b5748a6.svg" width="92" height="36" alt="Сайт"></picture></a>
+<a href="https://popovantondev.github.io/QuickAnswer/Guide-ru.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-guide-ru-dark.4cac85bd.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-guide-ru-light.ac2d868f.svg" width="161" height="36" alt="Руководство"></picture></a>
+<a href="https://github.com/popovantondev/QuickAnswer/issues/new"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-bug-ru-dark.f4f157ad.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/btn-bug-ru-light.f5142a78.svg" width="234" height="36" alt="Сообщить об ошибке"></picture></a>
+</p>
+
+<p><a href="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/assets/screenshots/popup-ru.png"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/preview-ru-dark.e40d0f49.webp"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/preview-ru-light.f9f4cb06.webp" width="880" height="516" alt="Интерфейс программы Quick Answer"></picture></a><br>
+<sub><a href="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/assets/screenshots/popup-ru.png">Снимок целиком</a></sub></p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/divider-dark.187dbbf7.svg"><img src="https://raw.githubusercontent.com/popovantondev/QuickAnswer/main/docs/readme/divider-light.1cc7ffb8.svg" width="880" height="6" alt="Разделитель"></picture>
+<!-- ppk-readme:body:end -->
+
 **Quick Answer — учебный помощник для самопроверки и подготовки. Соблюдайте правила своего учебного заведения: использовать его на экзаменах, контрольных работах и оценочных тестах запрещено.**
 
 **Расширение Edge — 1.7.8 (используется автором проекта). ПК-клиент — 0.1 Preview, ещё не проверен в Windows.**
-
-**[Edge 1.7.8 / Desktop 0.1 Source Preview](https://github.com/popovantondev/QuickAnswer/releases/tag/v1.7.8-desktop-0.1-preview)** · **[Сайт](https://popovantondev.github.io/QuickAnswer/index-ru.html)** · **[Руководство](https://popovantondev.github.io/QuickAnswer/Guide-ru.html)** · **[Сообщить об ошибке](https://github.com/popovantondev/QuickAnswer/issues/new)**
-
-![Демонстрационный интерфейс расширения Edge](docs/assets/screenshots/popup-ru.png)
 
 *На снимке — демонстрационные данные прежнего оформления 1.7.x; ключи и личные страницы не видны.*
 
